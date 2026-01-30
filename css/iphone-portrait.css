@@ -14,17 +14,25 @@
   button { padding: 8px 10px; font-size: 13px; }
 
   .resultRow {
-     gap: 8px;
+     gap: 6px;
      padding-bottom: 4px;
      padding-right: calc(16px + env(safe-area-inset-right);
      -webkit-overflow-scrolling: touch;
   }
-  .card { flex: 0 0 175px; }
-  .imgWrap { height: 120px; }
-  .cardHead { padding: 6px 8px; }
-  .cardHead .name { font-size: 12px; }
-  .pill { font-size: 10px; padding: 3px 6px; }
-  .fallback { font-size: 10px; padding: 6px 8px; }
+  .card { flex: 0 0 150px; }
+  .imgWrap { height: 96px; }
+  .cardHead { padding: 4px 6px; }
+  .cardHead .name {
+    font-size: 11px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .pill {
+    font-size: 9px;
+    padding: 2px 4px;
+  }
+  .fallback { display: none; }
 
   .block { padding: 8px; }
   .blockHead { margin-bottom: 6px; }
