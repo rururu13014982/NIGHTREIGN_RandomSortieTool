@@ -16,7 +16,7 @@
   .resultRow {
      gap: 6px;
      padding-bottom: 4px;
-     padding-right: calc(16px + env(safe-area-inset-right);
+     padding-right: calc(16px + env(safe-area-inset-right));
      -webkit-overflow-scrolling: touch;
   }
   .card { flex: 0 0 150px; }
