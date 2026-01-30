@@ -14,12 +14,19 @@
   button { padding: 8px 10px; font-size: 13px; }
 
   .resultRow {
-     gap: 6px;
-     padding-bottom: 4px;
-     padding-right: calc(16px + env(safe-area-inset-right));
-     -webkit-overflow-scrolling: touch;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2列 */
+    gap: 8px;
+    overflow-x: hidden;            /* 横スクロール禁止 */
+    padding-right: env(safe-area-inset-right);
+    padding-left: env(safe-area-inset-left);
+  }  .card {
+    width: 100%;
+    flex: initial;
   }
-  .card { flex: 0 0 150px; }
+  .bossCard {
+    grid-column: 1 / -1; 
+  }
   .imgWrap { height: 96px; }
   .cardHead { padding: 4px 6px; }
   .cardHead .name {
